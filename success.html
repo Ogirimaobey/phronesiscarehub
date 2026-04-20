@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Action Required | Phronesis Care Hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        :root {
+            --primary-blue: #005088;
+            --accent-emerald: #11caa0;
+            --cream-bg: #f3f0df;
+        }
+        body { font-family: 'DM Sans', sans-serif; background-color: var(--cream-bg); }
+        h1 { font-family: 'Merriweather', serif; color: var(--primary-blue); }
+        
+        .success-check { animation: scaleIn 0.6s cubic-bezier(0.34, 1.56, 0.64, 1); }
+        @keyframes scaleIn { 0% { transform: scale(0); opacity: 0; } 100% { transform: scale(1); opacity: 1; } }
+
+        .fade-in { animation: fadeIn 0.8s ease-out forwards; opacity: 0; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+
+        .btn-whatsapp {
+            background-color: #25D366;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        .btn-whatsapp:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(37, 211, 102, 0.2);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-6">
+
+    <div class="max-w-xl w-full text-center">
+        <!-- Logo -->
+        <img src="WhatsApp_Image_2026-04-20_at_02.43.19__1_-removebg-preview.png" alt="Phronesis Logo" class="h-16 mx-auto mb-8 fade-in" style="animation-delay: 0.1s;">
+
+        <div class="bg-white p-8 md:p-12 rounded-[2.5rem] shadow-2xl relative overflow-hidden fade-in" style="animation-delay: 0.3s;">
+            <!-- Success Icon -->
+            <div class="w-20 h-20 bg-emerald/10 text-emerald rounded-full flex items-center justify-center mx-auto mb-6 success-check">
+                <i class="fas fa-check-circle text-4xl"></i>
+            </div>
+
+            <h1 class="text-2xl md:text-3xl font-bold mb-4">Enrollment Started!</h1>
+            <p class="text-slate-600 text-md leading-relaxed mb-8">
+                Your program agreement has been recorded. Now, you must complete the final step to finalize your application.
+            </p>
+
+            <!-- FINAL STEP HIGHLIGHT -->
+            <div class="bg-emerald/5 p-6 rounded-2xl border-2 border-emerald/20 mb-8">
+                <h3 class="text-emerald font-extrabold uppercase text-xs tracking-widest mb-2">Final Step Required</h3>
+                <p class="text-blue font-bold text-lg mb-6 leading-tight">Submit your CV and Cover Letter to our Enrollment Team on WhatsApp.</p>
+                
+                <a href="https://wa.me/2349160426448?text=Hello%20Phronesis%20Team%2C%20I%20just%20completed%20my%20WACPHD%20application.%20Here%20is%20my%20CV%20and%20Cover%20Letter%20as%20required." 
+                   target="_blank" 
+                   class="btn-whatsapp w-full inline-flex items-center justify-center py-4 px-6 rounded-xl font-bold text-lg shadow-lg">
+                    <i class="fab fa-whatsapp mr-3 text-2xl"></i> SEND CV NOW
+                </a>
+            </div>
+
+            <div class="bg-slate-50 p-5 rounded-xl text-left border border-slate-100 mb-8">
+                <p class="text-xs text-slate-500 italic"><i class="fas fa-info-circle mr-1"></i> Applications without a sent CV via the button above will not be processed.</p>
+            </div>
+
+            <div class="flex justify-center">
+                <a href="index.html" class="text-slate-400 font-bold hover:text-blue transition text-sm">
+                    <i class="fas fa-chevron-left mr-2"></i> Return to Homepage
+                </a>
+            </div>
+        </div>
+
+        <p class="mt-8 text-slate-400 text-xs fade-in" style="animation-delay: 0.6s;">
+            &copy; 2024 Phronesis Care Hub. All Rights Reserved.
+        </p>
+    </div>
+
+</body>
+</html>
