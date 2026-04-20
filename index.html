@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WACPHD Program Application | Phronesis Care Hub</title>
+    <title>Public Health Program | Phronesis Care Hub</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -75,7 +75,7 @@
         <!-- Header -->
         <div class="text-center mb-8">
             <img src="WhatsApp_Image_2026-04-20_at_02.43.19__1_-removebg-preview.png" alt="Phronesis Logo" class="h-16 md:h-20 mx-auto mb-4">
-            <h1 class="text-2xl md:text-3xl font-bold">WACPHD Program</h1>
+            <h1 class="text-2xl md:text-3xl font-bold">Public Health Program</h1>
             <p class="text-slate-500 font-medium mt-1 text-sm md:text-base">Enrollment & Legal Commitment Form</p>
         </div>
 
@@ -93,7 +93,7 @@
         <!-- THE FORM (Note: No Action/Method to prevent hijacking) -->
         <form id="wacphdForm" class="glass-card p-6 md:p-10 rounded-[2.5rem] shadow-2xl">
             
-            <input type="hidden" name="_subject" value="NEW LEGAL AGREEMENT: WACPHD Program">
+            <input type="hidden" name="_subject" value="NEW LEGAL AGREEMENT: PUBLIC HEALTH Program">
 
             <!-- STEP 1: PERSONAL DETAILS -->
             <div class="form-step form-step-active" id="step1">
@@ -284,7 +284,7 @@
 
             const formData = new FormData(form);
             const data = Object.fromEntries(formData.entries());
-            data["_subject"] = "NEW WACPHD ENROLLMENT: " + (nameInput.value || "New Applicant");
+            data["_subject"] = "NEW PUBLIC HEALTH PROGRAM ENROLLMENT: " + (nameInput.value || "New Applicant");
 
             try {
                 const response = await fetch("https://formspree.io/f/xbdqknwn", {
